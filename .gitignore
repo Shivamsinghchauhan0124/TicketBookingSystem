@@ -3,3 +3,5 @@
 
 /frontend/.env
 /frontend/node_modules
+
+.next

@@ -44,8 +44,8 @@ async function request(endpoint, options = {}) {
 
 export const api = {
   auth: {
-    register: (body) => request('/auth/register', { method: 'POST', body }),
-    login: (body) => request('/auth/login', { method: 'POST', body }),
+    register: true,
+    login: true,
     me: () => request('/auth/me', { method: 'GET' }),
   },
   venues: {
