@@ -55,7 +55,7 @@ export default function LoginPage() {
       console.error(err);
       setError(err.message || 'Invalid email or password.');
     } finally {
-      setLoading(true);
+      setLoading(false);
     }
   };
 

@@ -77,14 +77,14 @@ export default function EventDetailPage() {
 
   // Setup Initial Loading and Real-Time Seat Map Polling (5-second intervals)
   useEffect(() => {
-    const token = localStorage.getItem('token');
-    if (!token) {
-      if (typeof window !== 'undefined') {
-        localStorage.setItem('redirectAfterLogin', window.location.pathname + window.location.search);
-      }
-      router.push('/login');
-      return;
-    }
+    // const token = localStorage.getItem('token');
+    // if (!token) {
+    //   if (typeof window !== 'undefined') {
+    //     localStorage.setItem('redirectAfterLogin', window.location.pathname + window.location.search);
+    //   }
+    //   router.push('/login');
+    //   return;
+    // }
     
     fetchEventData().then(() => {
       handleClaimedSeat();
