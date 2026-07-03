@@ -1,0 +1,20 @@
+import './globals.css';
+
+export const metadata = {
+  title: 'EpicTickets - Movie & Concert Ticket Booking Platform',
+  description: 'Book seats in real-time, experience instant seat-hold protection, join auto-reallocating waitlists, and get instant QR code tickets in your inbox.',
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
+      <body>
+        {children}
+      </body>
+    </html>
+  );
+}
